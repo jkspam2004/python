@@ -1,0 +1,155 @@
+
+my_int = 7
+my_float = 1.23
+my_bool = True
+spam = True
+eggs = False
+
+print my_int
+
+# indent four spaces
+def spam():
+    eggs = 12
+    return eggs
+        
+print spam()
+
+""" multi line
+comment
+end here """
+
+# total meal cost
+meal = 44.50
+tax = 0.0675
+tip = 0.15
+
+meal = meal + meal * tax
+total = meal + (meal * tip)
+
+print("%.2f" % total) 
+
+
+# The string below is broken. Fix it using the escape backslash!
+
+'This isn\'t flying, this is falling with style!'
+
+
+
+"""
+The string "PYTHON" has six characters,
+numbered 0 to 5, as shown below:
+
++---+---+---+---+---+---+
+| P | Y | T | H | O | N |
++---+---+---+---+---+---+
+  0   1   2   3   4   5
+
+So if you wanted "Y", you could just type
+"PYTHON"[1] (always start counting from 0!)
+"""
+fifth_letter = "MONTY"[4]
+
+print fifth_letter
+
+
+# string functions
+string = "Norwegian Blue"
+length = len(string)
+small = string.lower()
+big = string.upper()
+
+print "string=" + string 
+print "length=%s" % (length)
+print "lowered=" + small 
+print "uppered=" + big
+
+# turn non-string to string
+pi = 3.14
+print str(pi)
+
+# printing variables
+the_machine_goes = "Ping!"
+print the_machine_goes
+
+# string concatenation
+print "Spam " + "and " + "eggs"
+
+# string formatting with %
+string_1 = "Camelot"
+string_2 = "place"
+
+print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
+
+# datetime
+from datetime import datetime
+now = datetime.now()
+
+print '%s/%s/%s %s:%s:%s' % (now.month, now.day, now.year, now.hour, now.minute, now.second)
+
+
+"""
+     Boolean Operators
+------------------------      
+True and True is True
+True and False is False
+False and True is False
+False and False is False
+
+True or True is True
+True or False is True
+False or True is True
+False or False is False
+
+Not True is False
+Not False is True
+
+"""
+
+
+# Make me true!
+bool_three = 10 + 5 >= 5 + 10
+
+# if statements
+def greater_less_equal_5(answer):
+    if answer > 5:
+        return 1
+    elif answer < 5:          
+        return -1
+    else:
+        return 0
+        
+print greater_less_equal_5(4)
+print greater_less_equal_5(5)
+print greater_less_equal_5(6)
+
+
+# pig latin
+pyg = 'ay'
+original = raw_input('Enter a word: ')
+
+if len(original) > 0 and original.isalpha():
+    word = original.lower()
+    first = word[0]
+    new_word = word + first + pyg
+    new_word = new_word[1:len(new_word)]
+    print new_word
+else:
+    print 'empty'
+
+
+
+
+# slice
+s = "Charlie"
+
+print "orig=" + s
+print s[0]
+# will print "C"
+
+print s[1:4]
+# will print "har
+
+
+
+
+
