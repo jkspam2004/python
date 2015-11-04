@@ -15,10 +15,14 @@ first = 5
 second = 2
 
 int_result = 5/2
-float_result = 5.0/2.0
+int_result2 = 5//2
+float_result = 5.0/2
+float_result2 = float(5)/2
 
 print "integer division of 5/2 is %s" % (int_result)
+print "integer division of 5//2 is %s" % (int_result2)
 print "float division of 5.0/2.0 is %s" %(float_result)
+print "float division of float(5)/2 is %s\n" %(float_result2)
 
 # indent four spaces
 def spam():
@@ -162,7 +166,19 @@ print s[0]
 print s[1:4]
 # will print "har
 
+""" more slice
+a[start:end] # items start through end-1
+a[start:]    # items start through the rest of the array
+a[:end]      # items from the beginning through end-1
+a[:]         # a copy of the whole array
 
+a[start:end:step] # start through not past end, by step
+
+a[-1]    # last item in the array
+a[-2:]   # last two items in the array
+a[:-2]   # everything except the last two items
+
+"""
 
 
 
