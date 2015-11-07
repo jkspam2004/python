@@ -140,20 +140,6 @@ print greater_less_equal_5(5)
 print greater_less_equal_5(6)
 
 
-# pig latin
-pyg = 'ay'
-original = raw_input('Enter a word: ')
-
-if len(original) > 0 and original.isalpha():
-    word = original.lower()
-    first = word[0]
-    new_word = word + first + pyg
-    new_word = new_word[1:len(new_word)]
-    print new_word
-else:
-    print 'empty'
-
-
 
 
 # slice
@@ -181,4 +167,47 @@ a[:-2]   # everything except the last two items
 """
 
 
+
+# lists
+for i in [5, 4, 3, 2, 1] :
+    print i
+print 'Blastoff'
+
+friends = [ "Joseph", "Sally", "Glen" ]
+print "friends are", friends
+print "my friend at index 1 is", friends[1]
+
+# length of list, len()
+print "i have this many friends (using len()) =", len(friends)
+
+# assignment to list
+friends[1] = "Boo"
+print "now my new friend is", friends[1]
+
+# range function returns a list of numbers that range from zero to one less than the parameter
+print "range of 4 is", range(4)
+print "range of length of friends is", range(len(friends))
+
+for friend in friends :
+    print "looping through friends:", friend
+
+for i in range(len(friends)) :
+    print "looping with range and index at %s:" %(i), friends[i]
+
+nums_to_counts = [0] * 3
+print nums_to_counts
+
+
+# pig latin
+pyg = 'ay'
+original = raw_input('Enter a word: ')
+
+if len(original) > 0 and original.isalpha():
+    word = original.lower()
+    first = word[0]
+    new_word = word + first + pyg
+    new_word = new_word[1:len(new_word)]
+    print "pig latin=",  new_word
+else:
+    print 'empty'
 
