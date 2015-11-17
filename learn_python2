@@ -18,11 +18,13 @@ int_result = 5/2
 int_result2 = 5//2
 float_result = 5.0/2
 float_result2 = float(5)/2
+remainder = 5%2
 
 print "integer division of 5/2 is %s" % (int_result)
 print "integer division of 5//2 is %s" % (int_result2)
 print "float division of 5.0/2.0 is %s" %(float_result)
-print "float division of float(5)/2 is %s\n" %(float_result2)
+print "float division of float(5)/2 is %s" %(float_result2)
+print "remainder division of 5%%2 is %r\n" %(remainder)
 
 # indent four spaces
 def spam():
@@ -196,6 +198,10 @@ for i in range(len(friends)) :
 
 nums_to_counts = [0] * 3
 print nums_to_counts
+
+# type
+sval = '123'
+print(type(sval))
 
 
 # pig latin
