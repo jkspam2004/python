@@ -187,6 +187,15 @@ print("i have this many friends (using len()) =", len(friends))
 friends[1] = "Boo"
 print("now my new friend is", friends[1])
 
+# appending to list
+friends.append('Mike')
+print("added one more friend", friends)
+
+# split string into an array of chars
+string = 'hippo'
+string_list = list(string)
+print("my string hippo expanded to an array of chars with 'list'", string_list)
+
 # range function returns a list of numbers that range from zero to one less than the parameter
 print("range of 4 is", range(4))
 print("range of length of friends is", range(len(friends)))
