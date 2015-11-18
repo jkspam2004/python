@@ -1,7 +1,14 @@
 # reverse the integers in an array
 # first line of input is the length of the array
+#
+# Input:
 # 4
 # 1 4 3 2
+#
+# Output:
+# 2 3 4 1
+#
+# https://www.hackerrank.com/challenges/arrays-dsdfdf
 
 n=input()
 

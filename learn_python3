@@ -216,6 +216,29 @@ for i in range(1,5):
 sval = '123'
 print(type(sval))
 
+# breaking out of a loop
+i = 0
+while i < 5:
+    if i == 3:
+        print('done and break')
+        break
+    i += 1
+    print('while', i)
+
+
+# converting list to string
+
+#By using ''.join
+
+list1 = ['1', '2', '3']
+str1 = ''.join(list1)
+
+#Or if the list is of integers, convert the elements before joining them.
+
+list1 = [1, 2, 3]
+str1 = ''.join(str(e) for e in list1)
+
+
 
 # if statements
 x=3
