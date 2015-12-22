@@ -1,0 +1,89 @@
+# implement a singly linked list
+
+class LinkedListNode:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+    def __str__(self):
+        return str(self.value)
+
+a = LinkedListNode(5)
+b = LinkedListNode(1)
+c = LinkedListNode(9)
+
+a.next = b
+b.next = c
+
+print(a)
+
+# recursively print values of all the nodes
+def print_list_recursively(head):
+    next = head.next
+
+    print(head, end=' ')
+    if next == None:
+        return
+
+    print_list_recursively(next)
+
+print_list_recursively(a)
+print()
+
+# print values of nodes interatively
+def print_list_iteratively(node):
+    while node:
+        print(node, end=' ')
+        node = node.next
+
+    print()
+
+print_list_iteratively(a)
+
+a = LinkedListNode(5)
+b = LinkedListNode(1)
+c = LinkedListNode(9)
+a.next = b
+b.next = c
+
+
+def reverse(head):
+    current = head
+    previous = None
+    next = None
+
+    while current:
+        next = current.next
+        current.next = previous
+
+
+        previous = current
+        current = next
+
+        #if next != None:
+
+    print(current, end=' ')
+    return previous
+   
+
+d = reverse(a)
+print()
+
+a = LinkedListNode(5)
+b = LinkedListNode(1)
+c = LinkedListNode(9)
+a.next = b
+b.next = c
+
+
+def print_backward(list):
+    if list == None:
+        return
+   
+    #head = list
+    tail = list.next
+    print_backward(tail)
+    print(list, end=' ')
+
+print_backward(a)
+print()

@@ -177,7 +177,6 @@ a[:-2]   # everything except the last two items
 """
 
 
-
 # lists
 for i in [5, 4, 3, 2, 1] :
     print(i)
@@ -197,6 +196,17 @@ print("now my new friend is", friends[1])
 # appending to list
 friends.append('Mike')
 print("added one more friend", friends)
+
+# insert into a list
+animals = ["ant", "bat", "cat"]
+print(animals.index("bat"))
+animals.insert(1, "dog")
+print(animals)
+
+# list slice
+suitcase = ["sunglasses", "hat", "passport", "laptop", "suit", "shoes"]
+first  = suitcase[0:2]  # The first and second items (index zero and one)
+print(first)
 
 # split string into an array of chars
 string = 'hippo'
@@ -265,6 +275,12 @@ str1 = ''.join(str(e) for e in list1)
 # formatting decimal precision
 print("formatting to 3 decimal places", format(2.5, '.3f'))
 
+# sort function. sort() modifies list rather than returning new list
+animals = ["cat", "ant", "bat"]
+animals.sort()
+
+for animal in animals:
+    print(animal)
 
 
 # if statements
@@ -315,3 +331,31 @@ if len(original) > 0 and original.isalpha():
 else:
     print('empty')
 
+
+# dictionaries aka "hash"
+# Assigning a dictionary with three key-value pairs to residents:
+residents = {'Puffin' : 104, 'Sloth' : 105, 'Burmese Python' : 106}
+
+print(residents['Puffin']) # Prints Puffin's room number
+
+# dictionaries and list are mutable
+menu = {} # Empty dictionary
+menu['Chicken Alfredo'] = 14.50 # Adding new key-value pair
+print(menu['Chicken Alfredo'])
+
+# Your code here: Add some dish-price pairs to menu!
+menu['Spaghetti'] = 12.30
+menu['Penne with Bolognese'] = 16.50
+menu['Cheese pizza'] = 13.75
+
+print("There are " + str(len(menu)) + " items on the menu.")
+print(menu)
+
+# removing item from hash
+del menu['Cheese pizza']
+print(menu)
+
+# removing item from a list
+backpack = ['xylophone', 'candy', 'tent', 'bread loaf']
+backpack.remove('candy')
+print("items in backpack", backpack)
