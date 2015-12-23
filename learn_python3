@@ -338,7 +338,7 @@ residents = {'Puffin' : 104, 'Sloth' : 105, 'Burmese Python' : 106}
 
 print(residents['Puffin']) # Prints Puffin's room number
 
-# dictionaries and list are mutable
+# dictionaries and list are mutable (can be changed after they are created)
 menu = {} # Empty dictionary
 menu['Chicken Alfredo'] = 14.50 # Adding new key-value pair
 print(menu['Chicken Alfredo'])
@@ -359,3 +359,24 @@ print(menu)
 backpack = ['xylophone', 'candy', 'tent', 'bread loaf']
 backpack.remove('candy')
 print("items in backpack", backpack)
+
+
+# more hash stuff
+inventory = {
+    'gold' : 500,
+    'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
+    'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
+
+# Adding a key 'burlap bag' and assigning a list to it
+# Sorting the list found under the key 'pouch'
+inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
+inventory['pouch'].sort() 
+
+# remove dagger from backpack
+inventory['backpack'].remove('dagger')
+
+# add 50 to gold
+inventory['gold'] += 50
+
+print(inventory)
