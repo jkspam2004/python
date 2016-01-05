@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 ## python 3
 
 my_int = 7
@@ -295,7 +296,7 @@ else :
 # try and except
 # if the code in the 'try' works, then the 'except' is skipped
 # if the code in the 'try' fails, then it jumps the the 'except' block
-test = input("Enter an integer:")  
+test = input("Enter an integer: ")
 try:  
    test = int(test)  
 except:  
@@ -343,7 +344,7 @@ menu = {} # Empty dictionary
 menu['Chicken Alfredo'] = 14.50 # Adding new key-value pair
 print(menu['Chicken Alfredo'])
 
-# Your code here: Add some dish-price pairs to menu!
+# Add some dish-price pairs to menu!
 menu['Spaghetti'] = 12.30
 menu['Penne with Bolognese'] = 16.50
 menu['Cheese pizza'] = 13.75
@@ -379,4 +380,67 @@ inventory['backpack'].remove('dagger')
 # add 50 to gold
 inventory['gold'] += 50
 
+print("printing the hash")
 print(inventory)
+
+# loop through items in a hash
+print("looping through inventory hash")
+for key in inventory:
+    print("key=",key, ", values=", inventory[key])
+
+
+# more hashes
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+
+for item in prices:
+    print(item)
+    print("price: %s" % prices[item])
+    print("stock: %s" % stock[item])
+
+# more practice with hashes
+# While you loop through each item of food, only add the price of the item to total if the item's stock count is greater than zero.
+# if item is in stock, add price to total and subtract one from item's stock count
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+
+def compute_bill(food):
+    total = 0
+
+    for item in food:
+        if stock[item] > 0:
+            total += prices[item]
+            stock[item] -= 1
+
+    return total
+
+print("bill for banana", compute_bill(['banana']))
+print("bill for apple", compute_bill(['apple']))
+print("final stock is", stock)
+
+# strip() method
+# returns a copy of the string in which all chars have been stripped from the beginning and the end of the string (default whitespace characters)
+str = "0000000this is string example....wow!!!0000000";
+print(str.strip( '0' ))

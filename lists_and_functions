@@ -1,0 +1,30 @@
+# lists
+
+n = [1, 3, 15]
+n[1] *= 2
+print(n)
+
+# append
+n.append(4)
+print(n)
+
+# pop:  n.pop(index) - remove item at index and return item
+popped = n.pop(1)
+
+print("list after pop", n)
+print("popped", popped)
+
+# remove: n.remove(item) - remove the item if it is found
+n.remove(1) # removes 1 from the list
+print(n)
+
+# del: del(n[index]) - like pop, removes item at index, but doesn't return item 
+del(n[1])
+print(n)
+
+# functions
+n = "Hello"
+def string_function(s):
+    return s + 'world'
+
+print string_function(n)
