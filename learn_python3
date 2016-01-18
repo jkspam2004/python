@@ -306,7 +306,7 @@ else :
 
 # try and except
 # if the code in the 'try' works, then the 'except' is skipped
-# if the code in the 'try' fails, then it jumps the the 'except' block
+# if the code in the 'try' fails, then it jumps to the 'except' block
 test = input("Enter an integer: ")
 try:  
    test = int(test)  
