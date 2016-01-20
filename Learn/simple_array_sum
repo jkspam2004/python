@@ -1,0 +1,19 @@
+""" 
+python 2
+python 3: replace raw_input().split() with input.split()
+simple array sum
+6
+1 2 3 4 10 11
+Output a single value equal to the sum of the elements in the array.
+For the sample above you would just print 31 since 1+2+3+4+10+11=31.
+"""
+
+num_ints = int(input())
+
+sum = 0
+integers = raw_input().split(' ')
+print integers
+for num in range(num_ints):
+    sum = sum + int(integers[num])
+    
+print(sum)

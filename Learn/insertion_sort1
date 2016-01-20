@@ -1,0 +1,41 @@
+# Given a sorted list with an unsorted number e in the rightmost cell, 
+# write code to insert e into the array so that it remains sorted
+# Print array every time a value is shifted
+#
+# Input:
+# 5
+# 2 4 6 8 3
+#
+# Output:
+# 2 4 6 8 8
+# 2 4 6 6 8
+# 2 4 4 6 8
+# 2 3 4 6 8
+# 
+# https://www.hackerrank.com/challenges/insertionsort1
+
+
+size = input()
+ints = input().split(' ')
+V = ints[int(size) - 1]
+
+i = int(size) - 1
+while i >= 0 :
+    if i == 0 :
+        ints[i] = V
+        break
+
+    if ints[i-1] > V :
+        ints[i] = ints[i-1]
+    elif ints[i-1] <= V :
+        ints[i] = V
+        break
+
+    i -= 1
+
+    str1 = ' '.join(ints)
+    print(str1)
+
+str1 = ' '.join(ints)
+print(str1)
+
