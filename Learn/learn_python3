@@ -52,7 +52,7 @@ print("9. total meal cost is %.2f" % total)
 
 # The string below is broken. Fix it using the escape backslash!
 
-'This isn\'t flying, this is falling with style!'
+print('This isn\'t flying, this is falling with style!')
 
 
 
@@ -458,3 +458,8 @@ print(str.strip( '0' ))
 
 print('concat' + 'me')
 print('comma', 'me')
+
+# enumerate produces the index and the element of each loop
+fruits = [ 'apples', 'oranges', 'bananas', 'strawberries']
+for index, item in enumerate(fruits):
+    print(index, item)
