@@ -1,5 +1,4 @@
 def is_number(input_to_test):
-    print("\n {} ".format(input_to_test))
     """
     Checks to see if input_to_test is a valid number. The parameters for a valid number are:
     - Numbers are in base 10
@@ -12,6 +11,9 @@ def is_number(input_to_test):
     :param input_to_test: string
     :return: boolean
     """
+
+    print("\n {} ".format(input_to_test))
+
     has_non_zero_numeric_char = False
     has_decimal_char = False
     is_zero = False

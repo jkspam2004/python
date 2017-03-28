@@ -2,7 +2,7 @@
 # an example of seek()
 
 # Open a file
-fh = open("foo.txt", "r")
+fh = open("file_read.txt", "r")
 print ("Name of the file: ", fh.name)
 
 # Assuming file has following 5 lines
