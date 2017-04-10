@@ -1,0 +1,4 @@
+text to be opened by python script
+something
+foo
+bar

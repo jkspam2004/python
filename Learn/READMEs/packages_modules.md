@@ -1,7 +1,7 @@
-* A Python module is simply a Python source file, which can expose classes, functions and global variables.
-** When imported from another Python source file, the file name is treated as a namespace.
+# A Python module is simply a Python source file, which can expose classes, functions and global variables.
+## When imported from another Python source file, the file name is treated as a namespace.
 
-* A Python package is simply a directory of Python module(s).
+# A Python package is simply a directory of Python module(s).
     __init__.py : this file tells Python to treat this directory as a package
 
 
@@ -45,6 +45,6 @@ if __name__ == '__main__':
         from ..src.parse_csv import read_data
 
 2. importing module with absolute path:
-# first export PYTHONPATH to parent directory of package
+first export PYTHONPATH to parent directory of package
 $ echo PYTHONPATH=~/Git/python/Learn
 from tdd_package.src.parse_csv import read_data

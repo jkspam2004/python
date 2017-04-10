@@ -1,3 +1,5 @@
+# Python errors
+
 error: AttributeError: 'module' object has no attribute 'ArgumentParser'
 reason: Usually this symptom is the result of shadowing a builtin module with one of your own
 

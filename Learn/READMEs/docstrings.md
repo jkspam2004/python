@@ -1,19 +1,30 @@
+# Docstring comments
+
+```
 >>> import mymodule
 >>> help(mymodule)
+```
  
 Assuming this is file mymodule.py then this string, being the first statement in 
 the file will become the mymodule modules docstring when the file is imported.    
->>> help(mymodule.MyClass)
+
 The class's docstring
+```
+>>> help(mymodule.MyClass)
+```
 
->>> help(mymodule.MyClass.my_method)
 The method's docstring
+```
+>>> help(mymodule.MyClass.my_method)
+```
 
->>> help(mymodule.my_function)
 The function's docstring
+```
+>>> help(mymodule.my_function)
+```
 
 
-"""
+```
 This is an example of Google style docstring.
 
 Args:
@@ -25,4 +36,4 @@ Returns:
 
 Raises:
     KeyError: Raises an exception.
-"""
+```

@@ -1,3 +1,5 @@
+# "==" vs "is"
+
 There is a simple rule of thumb to tell you when to use == or is.
 
 "==" is for value equality. Use it when you would like to know if two objects have the same value.
